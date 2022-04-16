@@ -26,6 +26,7 @@ public class Linkdir extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
 //        getSupportActionBar().hide();
+
         setContentView(R.layout.activity_linkdir);
         imageView = findViewById(R.id.imgsho);
         Intent intent = getIntent();
