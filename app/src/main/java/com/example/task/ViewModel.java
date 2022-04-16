@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-public class ViewModel {
+public class ViewModel extends Linkdir {
 
     private List<MyModel> mModel;
     private Context mContext;
@@ -24,6 +24,7 @@ public class ViewModel {
     @BindingAdapter({"image"})
     public static void loadImage(ImageView view, String url) {
         Glide.with(view.getContext()).load(url).centerCrop().into(view);
+
     }
 
     public View.OnClickListener onCommentsClicked() {
